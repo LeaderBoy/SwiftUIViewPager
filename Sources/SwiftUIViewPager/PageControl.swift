@@ -66,6 +66,6 @@ extension PageControl : Buildable {
     }
     
     public func currentPageIndicatorTintColor(_ value : UIColor)-> Self {
-        mutating(keyPath: \.tintColor, value: value)
+        mutating(keyPath: \.currentTintColor, value: value)
     }
 }

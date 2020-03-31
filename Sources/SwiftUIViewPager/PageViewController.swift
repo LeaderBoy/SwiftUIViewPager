@@ -142,6 +142,7 @@ extension PageViewController.Coordinator : UIPageViewControllerDelegate {
 extension PageViewController.Coordinator : UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         disableBounceAction(in: scrollView)
+        progressAction(in: scrollView)
     }
 
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
